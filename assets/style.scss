@@ -1,0 +1,336 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/* ------- page elements ------- */
+
+body {
+  font:13px/18px Trebuchet MS,Arial,sans-serif;
+  color:#000;
+}
+
+/* ------ Header styling with logo ------ */
+
+#header {
+  text-align: center;
+  height:130px;
+}
+
+#header h1 a{
+  margin:0;
+  padding:0;
+  position:relative;
+  text-decoration:none;
+}
+
+#header h1 a:hover {
+  background-position:0 -35px;
+  cursor: pointer;
+}
+
+#site-name a {
+  border: none;
+}
+
+#site-name {
+  margin:15px 0;
+  margin-top:30px;
+  font: 3em Georgia, Times, serif;
+}
+
+#site-slogan {
+  font: italic 1em Georgia, Times, serif;
+}
+
+#accessibility {
+  position:absolute;
+  left:-9000px;
+}
+
+#wrapper {
+  width:750px;
+  margin:0 auto;
+  text-align:center;
+}
+
+#sidebar {
+  width:190px;
+  float:left;
+  text-align:left;
+}
+
+#content {
+  width:520px;
+  float:right;
+  text-align:left;
+}
+
+#footer {
+  clear:both;
+  width:750px;
+  line-height:33px;
+  margin:0 auto 20px;
+  background:transparent url(/img/bg_footer.gif) left bottom no-repeat;
+  text-align:center;
+}
+
+/* ------ General HTML elements ------ */
+a {
+  color:#6C9400;
+}
+
+a:hover {
+  color:#8BBE00;
+  text-decoration:underline;
+}
+
+p.centered {
+  text-align:center;
+}
+
+cite {
+  color:#7A7A7A;
+}
+
+blockquote {
+  margin:0 0 10px 10px;
+  padding:5px 10px 1px;
+  background-color:#FAF7F1;
+  border-left:4px solid #E6DDCE;
+}
+
+acronym {
+  border-bottom:1px dotted #666;
+  color:#000;
+  cursor: help;
+  letter-spacing:0.1em;
+}
+
+/* ------ sidebar styling ------ */
+
+#sidebar h1 {
+  padding:10px;
+  margin:10px 0 15px;
+  background:transparent url(/img/headerbox.gif) left top no-repeat;
+  font-size:1.2em;
+  line-height:0.85em;
+  color:#845709;
+}
+
+#sidebar p,
+#sidebar ul {
+  margin:0 10px 20px;
+  list-style-type:none;
+}
+
+#sidebar p {
+  text-align:justify;
+}
+
+#sidebar a:hover {
+  color:#8BBE00;
+  text-decoration:underline;
+}
+
+#sidebar ul li {
+  padding-left:20px;
+  margin:0px 0 0px;
+  background:transparent url(/img/icon_link_off.gif) 0px 3px no-repeat;
+}
+
+#sidebar ul li:hover {
+  background:transparent url(/img/icon_link_on.gif) 0px 3px no-repeat;
+}
+
+#sidebar ul li a {
+  font-weight:bold;
+  margin:0px 0 0px;
+}
+
+#sidebar ul.categories li {
+  background:transparent url(/img/icon_category_off.gif) 0px 2px no-repeat;
+}
+
+#sidebar ul.categories li:hover {
+  background:transparent url(/img/icon_category_on.gif) 0px 2px no-repeat;
+}
+
+#sidebar input {
+  margin:3px 0 0;
+  padding:2px 3px;
+  border:1px solid #F8CDA0;
+  color:#7A7A7A;
+}
+
+#sidebar p.feed {margin-bottom: 15px;}
+#sidebar p.feed img {position:relative; margin: 0 2px -2px 0;}
+
+/* ------ maincontent area styling ------ */
+
+#content h1 {
+  margin:10px 0 5px;
+  font-size:1.5em;
+  font-weight:200;
+  color:#ED8311;
+}
+
+#content h2 {
+  margin:10px 0 10px;
+  padding:7px 0;
+  font-size:1.2em;
+  font-weight:bold;
+  color:#845709;
+}
+
+#content h3 {
+  margin:7px 0 5px;
+  font-size:1.0em;
+  font-weight:bold;
+  color:#845709;
+}
+
+#content p,
+#content ul,
+#content ol {
+  margin:0 0 10px;
+}
+
+#content ol {
+  list-style-position:inside;
+  list-style-type:decimal;
+
+}
+
+#content a:hover {
+  text-decoration:none;
+  background-color:#6C9400;
+  color:#FFF;
+}
+
+#content h1 a {
+  color:#ED8311;
+}
+
+#content h1 a:hover {
+  background-color:#ED8311;
+  color:#FFFEFA;
+}
+
+#content ul li {
+  padding-left:20px;
+  background:transparent url(/img/icon_link_off.gif) 0px 4px no-repeat;
+}
+
+#content img {
+  margin:0 0 2px 5px;
+  padding:3px;
+  border:1px solid #E6DDCE;
+  background-color:#FAF7F1;
+}
+
+.screen {
+    text-align: center;
+    }
+.screen a, .screen a:hover {
+    background: #fff!important;
+    }
+
+/* ------ posts in listmode ------ */
+
+#content div.postlist {
+  margin:20px 0 35px;
+}
+
+#content div.postlist h1 {
+  margin-bottom:20px;
+}
+
+#content div.postlist img {
+    float: right;
+    }
+
+/* ------ comment list ------ */
+
+#content div.comments {
+  margin:35px 0 25px;
+}
+
+#content div.comments h2 {
+  padding:3px 10px 3px 5px;
+  border-top:1px solid #E6DDCE;
+  font-size:1.2em;
+}
+
+#content div.comments ol {
+  margin:25px 10px 20px 5px;
+  list-style:none;
+}
+
+#content div.comments ol li {
+  padding:0 0 15px 20px;
+  background:transparent url(/img/icon_comments.gif) 2px 5px no-repeat;
+}
+
+/* ------ comment date and time, both list and single view ------ */
+
+p.postmetadata {
+  padding:3px 10px 3px 20px;
+  background:transparent url(/img/icon_posted.gif) 5px 7px no-repeat;
+  border-top:1px solid #E6DDCE;
+  font-size:0.85em;
+  color:#7A7A7A;
+}
+
+p.postmetadata span.comments {
+  padding-left:35px;
+  background:transparent url(/img/icon_comments.gif) 17px 4px no-repeat;
+}
+
+/* ------ comment author, date, time ------ */
+
+.commentmetadata {
+  font-size:0.85em;
+  color:#7A7A7A;
+}
+
+.commentmetadata em {
+  font-size:1.2em;
+  font-style: normal;
+  font-weight:bold;
+  color:#845709;
+}
+
+.commentmetadata span {
+  padding:0 0 0 20px;
+  color:#FFFEFA;
+}
+
+.commentmetadata:hover span {
+  color:#ED8311;
+}
+
+/* ------ comment input form ------ */
+
+#txpCommentInputForm {
+  margin:0 10px 20px;
+  padding:15px;
+  background-color:#FAF7F1;
+}
+
+#txpCommentInputForm h2 {
+  margin:0;
+}
+
+#remember, #forget {
+  position:relative; /* positioning of checkbox */
+  top:-2px;
+  margin-right:3px;
+}
+
+/* ------ Footer elements ------ */
+
+#footer p {
+  font-size:0.85em;
+  color:#7A7A7A
+}
